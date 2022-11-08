@@ -196,7 +196,6 @@ nav a:link {
 
   display: block; */
 
-  margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
 }
@@ -267,7 +266,7 @@ nav p {
 } */
 
 /* FLOATS */
-.author-img {
+/*.author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -308,4 +307,94 @@ aside {
 
 footer {  
   clear: both;
+}*/
+
+/* FLEXBOX */
+
+.main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header > nav > a {
+  margin-top: 0px;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+p#author {
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* FLEXBOX LAYOUT */
+
+/*.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0px;
+}
+
+aside {
+  flex: 0  0 300px;
+}*/
+
+/* CSS GRID LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / span 2;
+  margin-bottom: 0px;
+}
+
+article {
+  margin-bottom: 0px;
+}
+
+aside {
+  
+}
+
+footer {
+  grid-column: 1 / -1;
 }
