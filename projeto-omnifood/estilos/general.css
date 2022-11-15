@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+/**************************************/
+/* GENERAL REUSABLE COMPONENTS*/
+/**************************************/
+
+.container {
+    max-width: 120em;
+    padding: 0px 4em;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    column-gap: 8em;
+    row-gap: 10em;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.heading-primary,
+.heading-secondary {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 5em;    
+    line-height: 1.1;    
+    margin-bottom: 2em;
+}
+
+.heading-secondary {
+    font-size: 4.5em;
+    line-height: 1.2;
+    margin-bottom: 3em;
+}
+
+.heading-tertiary {
+    font-size: 3.5em;
+    line-height: 1.2;
+    margin-bottom: 2em;
+}
+
+.subheading {
+    display: block;
+    font-size: 2em;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    letter-spacing: 0.75px;
+}
+
+.btn:link, .btn:visited {
+    display: inline-block;    
+    
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 1em 2em;
+    border-radius: 9px;
+
+    /* Put transition on original "state" */
+    transition: background-color 0.3s;
+}
+
+.btn--full:link, .btn--full:visited {
+    background-color: #e67e22;
+    color: white;
+}
+
+.btn--full:hover, .btn--full:active {
+    background-color: #cf711f;
+}
+
+
+.btn--outline:link, .btn--outline:visited {
+    background-color: white;
+    color: #555;
+}
+
+.btn--outline:hover, .btn--outline:active {
+    background-color: #fdf2e9;
+
+    /*Trick to add border inside*/
+    box-shadow: inset 0 0 0 3px white;
+}
+
+.margin-right-sm {
+    margin-right: 1em !important; 
+}
