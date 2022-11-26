@@ -31,8 +31,11 @@ body {
     display: grid;
     column-gap: 8em;
     row-gap: 10em;
-    grid-template-columns: repeat(2, 1fr);
-    
+    grid-template-columns: repeat(2, 1fr);    
+}
+
+.grid:not(:last-child){
+    margin-bottom: 96px;
 }
 
 .grid--2-cols {
@@ -135,6 +138,26 @@ body {
 .link:active {
     color: #cf711f;
     border-bottom: 1px solid transparent;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.list-item {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.list-icon {
+    width: 2em;
+    height: 2em;
+    color: #e67e22;
 }
 
 /* HELPER/SETTINGS CLASSSES */

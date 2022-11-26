@@ -291,22 +291,141 @@
     font-size: 18px;
 }
 
-.list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
+/**************************************/
+/* TESTIMONIALS SECTION*/
+/**************************************/
 
-.list-item {
-    font-size: 18px;
-    display: flex;
+.section-testimonials {    
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
     align-items: center;
-    gap: 1em;
 }
 
-.list-icon {
-    width: 2em;
-    height: 2em;
-    color: #e67e22;
+.testimonials-container {
+    padding: 10em;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3em;  
+    column-gap: 8em;  
+}
+
+.testimonial-img {
+    width: 6em;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.testimonial-text {
+    font-size: 1.8em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+}
+
+.testimonial-name {
+    font-size: 1em;
+    color: #6f6f6f;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 1em;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/**************************************/
+/* PRICING SECTION*/
+/**************************************/
+
+.section-pricing {
+    padding: 10em 0px;
+}
+
+.pricing-plan {    
+    border-radius: 11px;
+    
+    width: 75%;
+}
+
+.pricing-plan--starter {
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    padding: 46px;
+}
+
+.pricing-plan--complete {
+    background-color: #fdf2e9;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+    content: "Best Value";
+    position: absolute;
+    top: 6%;
+    right: -18%;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    columns: #333;
+    background-color: #ffd43b;
+    padding: 8px 80px;
+    transform: rotate(45deg);
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.plan-name {
+    color: #cf711f;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 2em;
+}
+.plan-price {
+    font-size: 6.2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.plan-price span {
+    font-size: 1em;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.plan-text {
+    font-size: 1.6em;
+    line-height: 1.6;
+    color: #6f6f6f;
+}
+
+.plan-sign-up {
+    text-align: center;
+    margin-top: 48px;
 }
